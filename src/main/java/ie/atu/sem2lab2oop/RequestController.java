@@ -13,4 +13,9 @@ public class RequestController {
     {
         return "Hello World...";
     }
+    @GetMapping("/greet/{name}")
+    public String greetByName(@PathVariable String name)
+    {
+        return "Hello "+ name;
+    }
 }
